@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Demo</h1>
+  <h2>Select mặc định</h2>
+  <%= select_tag 'books', grouped_options_for_select(@names) %>
+  <h2>Select2</h2>
+  <%= select_tag 'books', grouped_options_for_select(@names),
+                 class: 'select2' %>
+</div>
